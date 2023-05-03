@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회 원 가 입"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00BCD4"
+        android:hint="이메일 입력" />
+
+    <EditText
+        android:id="@+id/pwd_et"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:backgroundTint="#00BCD4"
+        android:hint="비밀번호 입력" />
+    <EditText
+        android:id="@+id/nickname_et"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:backgroundTint="#00BCD4"
+        android:hint="닉네임 입력" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입하기"
+            android:textColor="@color/black"
+            android:backgroundTint="#D1CDCD"
+            android:textSize="20sp"
+            android:layout_marginLeft="135dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#D1CDCD"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

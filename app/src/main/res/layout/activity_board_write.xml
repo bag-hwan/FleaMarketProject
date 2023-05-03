@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".board.BoardWriteActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="글쓰기 페이지"
+                   android:textSize="20sp" />
+
+           </LinearLayout>
+
+           <EditText
+               android:id="@+id/editTitle"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:hint="제목"
+               android:layout_margin="20dp"/>
+
+           <EditText
+               android:id="@+id/editContent"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_margin="20dp" />
+
+           <Button
+               android:id="@+id/insertBtn"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:text="등록"
+               android:backgroundTint="@color/light_silver"
+               android:textColor="@color/black"/>
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>
